@@ -12,18 +12,20 @@
     <div class="container">
       <aside>
         <div class="top">
-          <img src="images/logo.png" />
-          <h2>EGA<span class="danger">TOR</span></h2>
-        </div>
-        <div class="close" id="close-btn">
-          <span class="material-icons-sharp"> close </span>
+          <div class="logo">
+            <img src="images/logo.png" />
+            <h2>EGA<span class="danger">TOR</span></h2>
+          </div>
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp"> close </span>
+          </div>
         </div>
         <div class="sidebar">
           <a href="#">
             <span class="material-icons-sharp"> grid_view </span>
             <h3>Dashboard</h3>
           </a>
-          <a href="#">
+          <a href="#" class="active">
             <span class="material-icons-sharp"> person_outline </span>
             <h3>Customers</h3>
           </a>
@@ -62,6 +64,72 @@
           </a>
         </div>
       </aside>
+      <!-- END Asside -->
+      <main>
+        <h1>Dashboard</h1>
+        <div class="date">
+          <input type="date" />
+        </div>
+        <div class="insights">
+          <!-- SALES -->
+          <div class="sales">
+            <span class="material-icons-sharp"> analytics </span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Sales</h3>
+                <h1>$35,99</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" , cy="38" , r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>89%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Last 24 hours</small>
+          </div>
+          <!-- Expenses -->
+          <div class="expenses">
+            <span class="material-icons-sharp"> bar_chart </span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Expenses</h3>
+                <h1>$15,99</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" , cy="38" , r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>69%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Last 24 hours</small>
+          </div>
+          <!-- Income -->
+          <div class="income">
+            <span class="material-icons-sharp"> stacked_line_chart</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Income</h3>
+                <h1>$25,99</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" , cy="38" , r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>79%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Last 24 hours</small>
+          </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>
